@@ -1,0 +1,64 @@
+{
+    "$schema": "http://schema.express.azure.com/schemas/2015-01-01-alpha/RolloutParameters.json",
+    "contentVersion": "1.0.0.0",
+    "shellExtensions": [
+        {
+            "launch": {
+                "command": [
+                    "populate-cdn.sh"
+                ],
+                "environmentVariables": [
+                    {
+                        "name": "cdnContainer",
+                        "value": "static"
+                    },
+                    {
+                        "name": "artifactVolumeCount",
+                        "value": "3"
+                    },
+                    {
+                        "name": "blobKey",
+                        "reference": {
+                            "parameters": {
+                                "secretId": "https://kv-ev2-prod.vault.azure.net/secrets/v1-physical-Storage-connectorprod-key1"
+                            },
+                            "provider": "AzureKeyVault"
+                        }
+                    },
+                    {
+                        "name": "blobStore",
+                        "value": "https://connectorprod.blob.core.windows.net"
+                    },
+                    {
+                        "name": "artifactSasUrl_1",
+                        "reference": {
+                            "path": "bin\\Intercom.CdnUpload.zip.001"
+                        }
+                    },
+                    {
+                        "name": "artifactSasUrl_2",
+                        "reference": {
+                            "path": "bin\\Intercom.CdnUpload.zip.002"
+                        }
+                    },
+                    {
+                        "name": "artifactSasUrl_3",
+                        "reference": {
+                            "path": "bin\\Intercom.CdnUpload.zip.003"
+                        }
+                    }
+                ]
+            },
+            "name": "populate-cdn-content",
+            "package": {
+                "reference": {
+                    "path": "bin\\populateCdn.tar"
+                }
+            },
+            "properties": {
+                "maxexecutiontime": "PT10M"
+            },
+            "type": "shellExtension"
+        }
+    ]
+}

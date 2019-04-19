@@ -1,0 +1,656 @@
+{
+    "$schema": "http://schema.express.azure.com/schemas/2015-01-01-alpha/RolloutSpec.json",
+    "ContentVersion": "1.0.0.0",
+    "OrchestratedSteps": [
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "0-vault-global--0",
+            "TargetName": "0-vault-global--0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "0-vault-global--1",
+            "TargetName": "0-vault-global--1",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "0-vault-global--2",
+            "TargetName": "0-vault-global--2",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "0-vault-global--3",
+            "TargetName": "0-vault-global--3",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "0-vault-westus--0",
+            "TargetName": "0-vault-westus--0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-api-0",
+            "TargetName": "1-geneva-westus-api-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-devportal-0",
+            "TargetName": "1-geneva-westus-devportal-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-directline-0",
+            "TargetName": "1-geneva-westus-directline-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-directline-ms-0",
+            "TargetName": "1-geneva-westus-directline-ms-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-email-0",
+            "TargetName": "1-geneva-westus-email-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-facebook-0",
+            "TargetName": "1-geneva-westus-facebook-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-groupme-0",
+            "TargetName": "1-geneva-westus-groupme-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-kik-0",
+            "TargetName": "1-geneva-westus-kik-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-line-0",
+            "TargetName": "1-geneva-westus-line-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-proxy-0",
+            "TargetName": "1-geneva-westus-proxy-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-slack-0",
+            "TargetName": "1-geneva-westus-slack-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-sms-0",
+            "TargetName": "1-geneva-westus-sms-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-telegram-0",
+            "TargetName": "1-geneva-westus-telegram-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-testbot-0",
+            "TargetName": "1-geneva-westus-testbot-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [],
+            "Name": "1-geneva-westus-webjobs-0",
+            "TargetName": "1-geneva-westus-webjobs-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "0-vault-global--0",
+                "0-vault-global--1",
+                "0-vault-global--2",
+                "0-vault-global--3",
+                "0-vault-westus--0"
+            ],
+            "Name": "3-cert-farm-westus--0",
+            "TargetName": "3-cert-farm-westus--0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "0-vault-global--0",
+                "0-vault-global--1",
+                "0-vault-global--2",
+                "0-vault-global--3",
+                "0-vault-westus--0"
+            ],
+            "Name": "3-cert-farm-westus--1",
+            "TargetName": "3-cert-farm-westus--1",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "0-vault-global--0",
+                "0-vault-global--1",
+                "0-vault-global--2",
+                "0-vault-global--3",
+                "0-vault-westus--0"
+            ],
+            "Name": "3-cert-worker-global--0",
+            "TargetName": "3-cert-worker-global--0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "0-vault-global--0",
+                "0-vault-global--1",
+                "0-vault-global--2",
+                "0-vault-global--3",
+                "0-vault-westus--0"
+            ],
+            "Name": "4-secret-base-global--0",
+            "TargetName": "4-secret-base-global--0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "0-vault-global--0",
+                "0-vault-global--1",
+                "0-vault-global--2",
+                "0-vault-global--3",
+                "0-vault-westus--0"
+            ],
+            "Name": "4-secret-other-global--0",
+            "TargetName": "4-secret-other-global--0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "0-vault-global--0",
+                "0-vault-global--1",
+                "0-vault-global--2",
+                "0-vault-global--3",
+                "0-vault-westus--0"
+            ],
+            "Name": "4-secret-partner-global--0",
+            "TargetName": "4-secret-partner-global--0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "0-vault-global--0",
+                "0-vault-global--1",
+                "0-vault-global--2",
+                "0-vault-global--3",
+                "0-vault-westus--0"
+            ],
+            "Name": "4-secret-prints-global--0",
+            "TargetName": "4-secret-prints-global--0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "0-vault-global--0",
+                "0-vault-global--1",
+                "0-vault-global--2",
+                "0-vault-global--3",
+                "0-vault-westus--0"
+            ],
+            "Name": "4-secret-reference-global--0",
+            "TargetName": "4-secret-reference-global--0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "0-vault-global--0",
+                "0-vault-global--1",
+                "0-vault-global--2",
+                "0-vault-global--3",
+                "0-vault-westus--0"
+            ],
+            "Name": "4-secret-search-global--0",
+            "TargetName": "4-secret-search-global--0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Shell/populate-cdn-content"
+            ],
+            "DependsOn": [
+                "0-vault-global--0",
+                "0-vault-global--1",
+                "0-vault-global--2",
+                "0-vault-global--3",
+                "0-vault-westus--0",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0"
+            ],
+            "Name": "4-sh-ext-global-proxy-0",
+            "TargetName": "4-sh-ext-global-proxy-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0"
+            ],
+            "Name": "5-cspkg-global-slack-0",
+            "TargetName": "5-cspkg-global-slack-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--0",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-api-0",
+            "TargetName": "5-msdeploy-westus-api-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--0",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-arm-0",
+            "TargetName": "5-msdeploy-westus-arm-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--0",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-devportal-0",
+            "TargetName": "5-msdeploy-westus-devportal-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--1",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-directline--0",
+            "TargetName": "5-msdeploy-westus-directline--0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--1",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-directline-0",
+            "TargetName": "5-msdeploy-westus-directline-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--1",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-email-0",
+            "TargetName": "5-msdeploy-westus-email-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--1",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-facebook-0",
+            "TargetName": "5-msdeploy-westus-facebook-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--1",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-groupme-0",
+            "TargetName": "5-msdeploy-westus-groupme-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--1",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-kik-0",
+            "TargetName": "5-msdeploy-westus-kik-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--1",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-line-0",
+            "TargetName": "5-msdeploy-westus-line-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--0",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-proxy-0",
+            "TargetName": "5-msdeploy-westus-proxy-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--1",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-slack-0",
+            "TargetName": "5-msdeploy-westus-slack-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--1",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-sms-0",
+            "TargetName": "5-msdeploy-westus-sms-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--1",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-telegram-0",
+            "TargetName": "5-msdeploy-westus-telegram-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--1",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-testbot-0",
+            "TargetName": "5-msdeploy-westus-testbot-0",
+            "TargetType": "ServiceResource"
+        },
+        {
+            "Actions": [
+                "Deploy"
+            ],
+            "DependsOn": [
+                "3-cert-farm-westus--0",
+                "4-secret-base-global--0",
+                "4-secret-other-global--0",
+                "4-secret-partner-global--0",
+                "4-secret-prints-global--0",
+                "4-secret-reference-global--0",
+                "4-secret-search-global--0",
+                "4-sh-ext-global-proxy-0"
+            ],
+            "Name": "5-msdeploy-westus-webjobs-0",
+            "TargetName": "5-msdeploy-westus-webjobs-0",
+            "TargetType": "ServiceResource"
+        }
+    ],
+    "RolloutMetadata": {
+        "BuildSource": {
+            "Parameters": {
+                "VersionFile": "buildver.txt"
+            }
+        },
+        "Name": "RolloutSpec-code-prod-all-ring-1.json",
+        "RolloutType": "Major",
+        "ServiceModelPath": "ServiceModel-code-prod-all-ring-1.json"
+    }
+}
